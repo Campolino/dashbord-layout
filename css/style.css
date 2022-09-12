@@ -1,3 +1,4 @@
+/*  GERAL  */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 body {
@@ -7,8 +8,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/*  NAVBAR CONFIGURATION  */
+
 nav {
-  background-color: rgb(69, 147, 219);
+  background-color: #0369a1;
   color: aliceblue;
   font-size: 1.5rem;
   font-weight: 500;
@@ -24,4 +27,33 @@ nav > header, nav > section {
 
 nav > section > div + div, nav > header {
   margin-top: 20px;
+}
+
+/*  LOGO and HEADER TITLE  */
+nav > header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 2rem;
+}
+
+.header-logo {
+  display: grid;
+  height: 2rem;
+  width: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.header-logo > div {
+  background-color: white;
+}
+
+.header-logo > :first-child {
+  grid-area: 1 / 1 / 3 / 1;
+}
+
+.header-logo > :last-child {
+  grid-area: 2 / 2 / 4 / 2;
 }
