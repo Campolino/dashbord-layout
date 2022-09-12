@@ -54,3 +54,88 @@ nav > header > img {
 nav > section > div > img {
   height: 22.5px;
 }
+
+/*  MAIN  */
+main {
+  background-color: #e5e7eb;
+}
+
+/*  MAIN HEADER  */
+main > header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #fff;
+  padding: 20px;
+  gap: 20px;
+}
+
+.search {
+  margin-left: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.search > img {
+  height: 22.5px;
+}
+
+.search > input {
+  width: 90%;
+  border-radius: 20px;
+  height: 1.5rem;
+  border: none;
+  background-color: #dde0e7;
+}
+
+.user-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.user-small > img {
+  height: 22.5px;
+}
+
+.user-small > .avatar-small {
+  height: 35px;
+}
+
+.user-small > div {
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.user {
+  margin-left: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.user > .avatar {
+  height: 60px;
+}
+
+.user > .greeting {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.iteration {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.iteration > div {
+  padding: 10px 25px;
+  background-color: #0284c7;
+  color: #fff;
+  border-radius: 20px;
+}
