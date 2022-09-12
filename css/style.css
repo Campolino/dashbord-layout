@@ -3,17 +3,17 @@
 
 body {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
   height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
 
-/*  NAVBAR CONFIGURATION  */
+/*  NAVBAR LAYOUT  */
 
 nav {
-  background-color: #0369a1;
-  color: aliceblue;
-  font-size: 1.5rem;
+  background-color: #0284c7;
+  color: #fff;
+  font-size: 1.2rem;
   font-weight: 500;
 
   display: flex;
@@ -21,39 +21,36 @@ nav {
   gap: 35px;
 }
 
-nav > header, nav > section {
+nav > header {
+  font-size: 1.8rem;
+}
+
+nav > header,
+nav > section {
   margin-left: 20px;
 }
 
-nav > section > div + div, nav > header {
+nav > section > div + div,
+nav > header {
   margin-top: 20px;
 }
 
-/*  LOGO and HEADER TITLE  */
-nav > header {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-size: 2rem;
-}
-
-.header-logo {
+nav > header,
+nav > section > div  {
   display: grid;
-  height: 2rem;
-  width: 2rem;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 2px;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
 }
 
-.header-logo > div {
-  background-color: white;
+nav > header > img,
+nav > section > div > img {
+  justify-self: center;
 }
 
-.header-logo > :first-child {
-  grid-area: 1 / 1 / 3 / 1;
+nav > header > img {
+  height: 45px;
 }
 
-.header-logo > :last-child {
-  grid-area: 2 / 2 / 4 / 2;
+nav > section > div > img {
+  height: 22.5px;
 }
