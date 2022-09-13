@@ -144,10 +144,23 @@ main > header {
 /*  MAIN ARTICLE  */
 main > article {
   display: flex;
-  margin: 50px 20px 0 15px;
+  margin: 20px 20px 0 15px;
 }
 
-main > article > section {
+main > article > section,
+aside,
+aside > section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main > article > section > legend,
+aside > section > legend {
+  font-weight: bold;
+}
+
+main > article > section > div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -174,6 +187,7 @@ main > article > section {
 
 .card-text > .card-text-body {
   height: 90px;
+  overflow: scroll;
 }
 
 .card-figures {
@@ -185,4 +199,38 @@ main > article > section {
 
 .card-figures > img {
   height: 20px;
+}
+
+
+/*  MAIN ASIDE  */
+aside {
+  width: 90%;
+  margin-left: 20px;
+}
+
+aside > section + section {
+  margin-top: 20px;
+}
+
+aside > section > div {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 2px gray;
+  border-radius: 5px;
+}
+
+aside > section > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+aside > section > div > div:not(:last-of-type) {
+  box-shadow: 0 2px 2px -2px gray;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+aside > section > div > div > .announcements-title {
+  font-weight: bold;
 }
