@@ -229,7 +229,7 @@ aside > section > div > div {
 aside > section > div > div:not(:last-of-type) {
   box-shadow: 0 2px 2px -2px gray;
   margin-bottom: 20px;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
 }
 
 aside > section > div > div > .announcements-title,
@@ -252,7 +252,7 @@ aside > section > div > div > .announcements-text,
 }
 
 .trendings > img {
-  height: 30.8px;
+  height: 32px;
 }
 
 .trendings-user {
