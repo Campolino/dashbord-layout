@@ -223,14 +223,40 @@ aside > section > div > div {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  font-size: 0.8rem;
 }
 
 aside > section > div > div:not(:last-of-type) {
   box-shadow: 0 2px 2px -2px gray;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 }
 
-aside > section > div > div > .announcements-title {
+aside > section > div > div > .announcements-title,
+.trendings-user > .user-nick {
   font-weight: bold;
+}
+
+aside > section > div > div > .announcements-text,
+.card-text > .card-text-body,
+.trendings-user > .user-description {
+  color: rgb(66, 61, 61);
+}
+
+/*  TRENDING  */
+.trendings {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.trendings > img {
+  height: 30.8px;
+}
+
+.trendings-user {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
